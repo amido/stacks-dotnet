@@ -38,7 +38,7 @@
         <None Include="pact-unix/**" Link="pact-linux-x86_64\bin\%(RecursiveDir)%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />
     </ItemGroup>
     <ItemGroup Condition=" '$([System.Runtime.InteropServices.RuntimeInformation]::IsOSPlatform($([System.Runtime.InteropServices.OSPlatform]::OSX)))' ">
-        <PackageReference Include="PactNet.OSX" Version="2.4.6" />
+        <PackageReference Include="PactNet.OSX" Version="3.0.0" />
         <None Include="pact-unix/**" Link="pact-osx\bin\%(RecursiveDir)%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />
     </ItemGroup>
 
