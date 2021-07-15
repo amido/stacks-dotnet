@@ -53,6 +53,7 @@ namespace xxAMIDOxx.xxSTACKSxx.API.ContractTests
         //If there are additional consumers, add extra inline data with the consumer name
         [Theory]
         [InlineData("GenericMenuConsumer")]
+        [InlineData("CsrMenuConsumer")]
         //[InlineData("OtherConsumer")]
         public void EnsureProviderApiHonoursPactWithConsumer(string consumerName)
         {
