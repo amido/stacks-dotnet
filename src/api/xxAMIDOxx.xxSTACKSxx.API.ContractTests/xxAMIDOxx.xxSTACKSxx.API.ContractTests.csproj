@@ -30,7 +30,7 @@
         <PackageReference Include="PactNet.Windows" Version="3.0.0" />
     </ItemGroup>
     <ItemGroup Condition=" '$([System.Runtime.InteropServices.RuntimeInformation]::IsOSPlatform($([System.Runtime.InteropServices.OSPlatform]::Linux)))' &#xD;&#xA;             and '$([System.Runtime.InteropServices.RuntimeInformation]::OSArchitecture)'=='X86'">
-        <PackageReference Include="PactNet.Linux.x86" Version="2.4.6" />
+        <PackageReference Include="PactNet.Linux.x86" Version="3.0.0" />
         <None Include="pact-unix/**" Link="pact-linux-x86\bin\%(RecursiveDir)%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />
     </ItemGroup>
     <ItemGroup Condition="'$([System.Runtime.InteropServices.RuntimeInformation]::IsOSPlatform($([System.Runtime.InteropServices.OSPlatform]::Linux)))' &#xD;&#xA;             and '$([System.Runtime.InteropServices.RuntimeInformation]::OSArchitecture)'=='X64' ">
